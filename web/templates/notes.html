@@ -1,0 +1,48 @@
+<h5 class="mt-5">Trending Posts</h5>
+
+            <div class="card p-3 mt-3 border-0 shadow-sm" style="width: 90%;" >
+                <div class="card-body">
+                    <div class="row main ">
+                        {% for t in posts %}
+                        <div class="card mb-3 border-0 child" style="max-width: 100%;">
+                            <div class="row g-0">
+                              
+                                    
+                                    <div class="container my-3">
+                                        <h1>Take your Notes here</h1>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title">
+                                                    Add a Note
+                                                  
+                                                </h5>
+                                                <div class="form-group">
+                                                    <textarea class="form-control" 
+                                                        id="addTxt" rows="3">
+                                                    </textarea>
+                                                </div>
+                                                <button class="btn btn-primary" 
+                                                    id="addBtn" style=
+                                                    "background-color:green">
+                                                    Add Note
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h1>Your Notes</h1>
+                                        <hr>
+                                          
+                                        <div id="notes" class=
+                                            "row container-fluid"> 
+                                        </div>
+                                    </div>
+
+
+                              
+                              </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>  
+                </div>
+            </div>
