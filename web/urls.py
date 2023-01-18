@@ -12,6 +12,10 @@ urlpatterns = [
     path("user/<int:id>/note/add", add_notes, name="add-note"),
     path("people/", ListPeopleView.as_view(), name="people"),
     path("comment/<int:id>/remove",comment_delete,name="comment-delete"),
-    path("add/profile",AddProfile.as_view(),name="addprofile")
+    path("add/profile",AddProfile.as_view(),name="addprofile"),
+    path("post/<int:id>/remove",post_delete,name="post-delete"),
+    
+    
+
 
 ]

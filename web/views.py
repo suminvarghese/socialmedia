@@ -141,6 +141,15 @@ def comment_delete(request,*args,**kw):
     Comments.objects.get(id=id).delete()
     return redirect("index")
 
+
+decs
+def post_delete(request,*args,**kw):
+    id=kw.get("id")
+    Posts.objects.get(id=id).delete()
+    return redirect("index")
+
+
+
 @method_decorator(decs,name="dispatch")
 class EditProfile(UpdateView):
     template_name="profile.html"
